@@ -67,7 +67,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "frontend:build"
+            "browserTarget": "frontend:build",
+            "host": "0.0.0.0",
+            "port": 4200,
+            "poll": 2000,
+            "disableHostCheck": true
           },
           "configurations": {
             "production": {
