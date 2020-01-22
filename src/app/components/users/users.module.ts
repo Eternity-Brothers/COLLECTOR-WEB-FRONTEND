@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UsersRoutingModule } from './users-routing.module';
+import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+// Nebular Modules
 
 // Components
 import { UsersComponent } from './users.component';
@@ -40,7 +43,7 @@ import { UserOptionsComponent } from './user-options/user-options.component';
   ],
   imports: [
     CommonModule,
-    UsersRoutingModule
+    UsersRoutingModule,
   ]
 })
 export class UsersModule { }
